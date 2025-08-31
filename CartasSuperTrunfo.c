@@ -14,16 +14,17 @@ int main() {
 
 char cidade[50], código[4], cidade2[50], código2[4];
 int população, pontos_turísticos, população2, pontos_turísticos2;    
-float área, pib, área2, pib2;
+float área, pib, área2, pib2; //Pode acabar renderizando zeros a mais.
 
 // ----------------------------------------
 
 /*
-Pede-se que seja a população como INT, porém acho o FLOAT melhor.
-Um exemplo é que na minha cidade tem por volta de 43.200 habitantes, no int, não é possível,
-incluir números "quebrados", mas seguirei com o INT assim como solicitado.
+Apesar de considerar o tipo float mais adequado em alguns cenários (ex.: permitir números fracionados),
+utilizarei o tipo int conforme solicitado no enunciado."
 
 OBS: Tomar cuidado com os valores digitados, já que cada variável aceita um determinado tipo de formato como ensinado.
+O tipo float pode incluir zeros a mais, exemplo: 500km / render: 500.000 KM 
+Uma possibilidade seria armazenar como string para preservar exatamente o formato digitado, mas seguirei com float, conforme indicado.
 */
 
 // Código principal:
@@ -101,8 +102,8 @@ printf("-------[Carta 01]--------\n"); //Exibição carta 01.
 
 printf("Cidade: %s\n", cidade);
 printf("Código da cidade: %s\n", código);
-printf("Área: %f KM\n", área);
-printf("População: %d\n", população);
+printf("Área: %f KM\n", área);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %d\n", população);       
 printf("PIB: %f\n", pib);
 printf("Pontos turísticos: %d\n", pontos_turísticos);
 
