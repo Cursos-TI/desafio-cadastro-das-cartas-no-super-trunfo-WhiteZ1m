@@ -13,8 +13,9 @@ int main() {
 // Criação de variáveis:
 
 char cidade[50], código[4], cidade2[50], código2[4];
-int população, pontos_turísticos, população2, pontos_turísticos2;    
-float área, pib, área2, pib2; //Pode acabar renderizando zeros a mais.
+int populacao, pontos_turísticos, populacao2, pontos_turísticos2;    
+float área, pib, área2, pib2, densidadepopulacional1,densidadepopulacional2, pibpercapta1, pibpercapta2; 
+//Float pode acabar renderizando zeros a mais.
 
 // ----------------------------------------
 
@@ -48,7 +49,7 @@ printf("Área da cidade: \n");
 scanf("%f", &área);
 
 printf("População: \n");
-scanf("%d"), &população;
+scanf("%d", &populacao);
 
 printf("Pib: \n");
 scanf("%f", &pib);
@@ -82,7 +83,7 @@ printf("Área da cidade: \n");
 scanf("%f", &área2);
 
 printf("População: \n");
-scanf("%d"), &população2;
+scanf("%d", &populacao2);
 
 printf("Pib: \n");
 scanf("%f", &pib2);
@@ -91,6 +92,20 @@ printf("Pontos turísticos: \n");
 scanf("%d", &pontos_turísticos2);
 
 // Carta 02 finalizada.
+
+// ---------------------------------------------------
+
+// Calculo de média (densidade populacional):
+
+densidadepopulacional1 = populacao / área;
+densidadepopulacional2 = populacao2 / área2;
+
+// pibpercapta:
+
+pibpercapta1 = pib / populacao;
+pibpercapta2 = pib2 / populacao2;
+
+// ---------------------------------------------------
 
 //Renderização dos atributos incluidos nas cartas:
 
@@ -103,18 +118,22 @@ printf("-------[Carta 01]--------\n"); //Exibição carta 01.
 printf("Cidade: %s\n", cidade);
 printf("Código da cidade: %s\n", código);
 printf("Área: %f KM\n", área);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
-printf("População: %d\n", população);       
-printf("PIB: %f\n", pib);
+printf("População: %d\n", populacao);       
+printf("PIB: %.2f\n", pib);
 printf("Pontos turísticos: %d\n", pontos_turísticos);
+printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional1);
+printf("PIB per capita: %.2f reais\n", pibpercapta1);
 
 printf("-------[Carta 02]--------\n"); //Exibição carta 02.
 
 printf("Cidade: %s\n", cidade2);
 printf("Código da cidade: %s\n", código2);
 printf("Área: %f KM\n", área2);
-printf("População: %d\n", população2);
-printf("PIB: %f\n", pib2);
+printf("População: %d\n", populacao2);
+printf("PIB: %.2f\n", pib2);
 printf("Pontos turísticos: %d\n", pontos_turísticos2);
+printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional2);
+printf("PIB per capita: %.2f reais\n", pibpercapta2);
 
 printf("---------------------------\n"); //para organizar a tela.
 
