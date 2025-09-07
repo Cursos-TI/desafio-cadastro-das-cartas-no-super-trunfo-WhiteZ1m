@@ -33,7 +33,7 @@ Uma possibilidade seria armazenar como string para preservar exatamente o format
 // (Carta 1)
 
 printf("---- Super trunfo ----\n");  //nome do jogo
-printf("Versão do jogo: 0.0.1\n"); //versão do jogo (iniciante 0.0.1)
+printf("Versão do jogo: 0.0.2\n"); //versão do jogo (iniciante 0.0.1)
 
 printf("-----------------------\n");
 printf("Carta 01 - Super trunfo\n");
