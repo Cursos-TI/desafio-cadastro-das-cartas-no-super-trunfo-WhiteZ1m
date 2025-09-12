@@ -135,10 +135,43 @@ resultadoB5 = densidadepopulacional2 < densidadepopulacional1;
 resultadoB6 = pibpercapta2 > pibpercapta1;
 resultadoB7 = superpoder2 > superpoder1;
 
-//Renderização dos atributos incluidos nas cartas:
+int escolhadeCarta;
+printf("Escolha a sua carta: \n");
+printf("Carta 1: %s\n", cidade);
+printf("Carta 2: %s\n", cidade2);
+printf("Digite 1 ou 2:");
+scanf("%d", &escolhadeCarta);
+
+int escolha1, escolha2, escolhacomparacao;
+int um,dois,tres,quatro,cinco,seis,sete;
+
+if (escolhadeCarta == 1){
+
+   printf("Dos atributos abaixo qual deseja comparar?\n");
+   printf("-----------------------------------------------\n")
+
+   printf("1. Área\n");
+   printf("2. População\n");
+   printf("3. Pib\n");
+   printf("4. Ponto turístico\n");
+   printf("5. Densidade populacional\n");
+   printf("6. Pib per capita\n");
+   printf("7. SuperPoder\n");
+
+   printf("-----------------------------------------------\n")
+
+   printf("Escolha de 1 a 7: ");
+   scanf("%d", escolhacomparacao);
+
+    switch(escolhacomparacao){
+
+     case 1 && área > área2:
+        printf("Você ganhou!\n");
+
+        //Renderização dos atributos incluidos nas cartas:
 
 printf("---------------------------\n"); //para organizar a tela.
-printf("Cartas registradas com sucesso! \n"); //Anúncio de registro.
+printf("Cartas registradas: \n"); //Anúncio de registro.
 printf("---------------------------\n"); //para organizar a tela.
 
 printf("-------[Carta 01]--------\n"); //Exibição carta 01.
@@ -168,6 +201,635 @@ printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
 printf("---------------------------\n"); //para organizar a tela.
 
 //-------------------------------------------------------------------------------
+
+ break;
+ case 2 && populacao > populacao2:
+ printf("Você ganhou!\n")
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+break;
+case 3 && pib > pib2:
+
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+
+break;
+
+case 4 && pontos_turísticos > pontos_turísticos2:
+printf("Você ganhou!\n")
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+
+break;
+
+case 5 && densidadepopulacional1 > densidadepopulacional2:
+printf ("Você ganhou!\n")
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+break;
+
+case 6 && pibpercapta1 > pibpercapta2:
+
+printf("Você ganhou! \n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+break;
+
+case 7 && superpoder1 > superpoder2:
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+break;
+
+default:
+printf("Você perdeu!\n");
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+    break;
+
+
+    }
+
+} else if (escolhadeCarta == 2){
+
+printf("Dos atributos abaixo qual deseja comparar?\n");
+   printf("-----------------------------------------------\n")
+
+   printf("1. Área\n");
+   printf("2. População\n");
+   printf("3. Pib\n");
+   printf("4. Ponto turístico\n");
+   printf("5. Densidade populacional\n");
+   printf("6. Pib per capita\n");
+   printf("7. SuperPoder\n");
+
+   printf("-----------------------------------------------\n")
+
+   printf("Escolha de 1 a 7: ");
+   scanf("%d", escolhacomparacao);
+
+    switch(escolhacomparacao){
+
+case 1 && área2 > área:
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+break;
+case 2 && populacao2 > populacao:
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+
+break;
+case 3 && pib2 > pib1:
+
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+break;
+
+case 4 && pontos_turísticos2 > pontos_turísticos:
+
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+
+break;
+
+case 5 && densidadepopulacional1 < densidadepopulacional2:
+
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+
+break;
+
+case 6 && pibpercapta2 > pibpercapta1:
+
+printf("Você ganhou!\n");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+
+break;
+
+case 7 & superpoder2 > superpoder1:
+
+printf("Você ganhou!");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+break;
+default:
+
+printf("Você perdeu!");
+
+//Renderização dos atributos incluidos nas cartas:
+
+printf("---------------------------\n"); //para organizar a tela.
+printf("Cartas registradas: \n"); //Anúncio de registro.
+printf("---------------------------\n"); //para organizar a tela.
+
+printf("-------[Carta 01]--------\n"); //Exibição carta 01.
+
+printf("Cidade: %s\n", cidade);
+printf("Código da cidade: %s\n", codigo);
+printf("Área: %.2f KM [%d]\n", área, resultadoA1);       //Por ser FLOAT ele deve renderizar zeros a mais, se colocar %.0f ele renderiza menos porém se a área for 300.000 ai sai só 300.
+printf("População: %lu [%d]\n", populacao, resultadoA2);       
+printf("PIB: %.2f [%d]\n", pib, resultadoA3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos, resultadoA4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional1, resultadoA5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta1, resultadoA6);
+printf("SuperPoder = %f [%d]\n", superpoder1, resultadoA7);
+
+printf("-------[Carta 02]--------\n"); //Exibição carta 02.
+
+printf("Cidade: %s\n", cidade2);
+printf("Código da cidade: %s\n", codigo2);
+printf("Área: %.2f KM [%d]\n", área2, resultadoB1);
+printf("População: %lu [%d]\n", populacao2, resultadoB2);
+printf("PIB: %.2f [%d]\n", pib2, resultadoB3);
+printf("Pontos turísticos: %d [%d]\n", pontos_turísticos2, resultadoB4);
+printf("Densidade populacional: %.2f hab/km² [%d]\n", densidadepopulacional2, resultadoB5);
+printf("PIB per capita: %.2f reais [%d]\n", pibpercapta2, resultadoB6);
+printf("SuperPoder = %f [%d]\n", superpoder2, resultadoB7);
+
+printf("---------------------------\n"); //para organizar a tela.
+
+//-------------------------------------------------------------------------------
+
+break;
+
+
+
+
+
+
+
+    }
+
+    
+}
+
+
 
     return 0; //Finalizando o código.
 
